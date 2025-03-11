@@ -1,18 +1,22 @@
 document.getElementById("surveyForm").addEventListener("submit", function (e) {
-  e.preventDefault(); // Prevent form submission and page reload
+    e.preventDefault();
 
-  // Gather form data
-  const formData = new FormData(e.target);
-  
-  let emailBody = '';
-  
-  formData.forEach((value, key) => {
-    emailBody += `${key}: ${value}\n`;
-  });
+    const formData = new FormData(e.target);
+    let emailBody = '';
 
-  // Create mailto link
-  const mailToLink = `mailto:inderkiranbhamra2003@gmail.com?subject=DashDrobe%20Survey%20Response&body=${encodeURIComponent(emailBody)}`;
-  
-  // Open mailto link
-  window.location.href = mailToLink;
+    formData.forEach((value, key) => {
+        if (Array.isArray(value)) {
+            emailBody += `${key}: ${value.join(', ')}\n`;  // Handle arrays (e.g., checkboxes)
+        } else {
+            emailBody += `${key}: ${value}\n`;
+        }
+    });
+
+    const subject = "DashDrobe Survey Response";
+    const recipient = "inderkiranbhamra2003@gmail.com";
+    const body = encodeURIComponent(emailBody); // URL encode the body
+
+    let mailToLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${body}`;
+
+    window.location.href = mailToLink;
 });
