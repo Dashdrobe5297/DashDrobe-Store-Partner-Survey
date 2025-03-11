@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DashDrobe Store Partner Survey</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="logo-container">
+      <img src="logo.png" alt="DashDrobe Logo" class="logo">
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <h1 class="headline1">DashDrobe Store Partner Survey</h1>
+    <p class="bodyText1">We are conducting this survey to understand how we can best support your retail store with <b>instant fashion delivery and AI-powered shopping experiences</b>.</p>
+
+    <form id="surveyForm">
+      <!-- Section 1: Store Information -->
+      <h2 class="headline2">1. Store Information</h2>
+      <label for="storeName" class="bodyText2">Store Name:</label>
+      <input type="text" id="storeName" name="storeName" required><br>
+
+      <label for="location" class="bodyText2">Location(s):</label>
+      <input type="text" id="location" name="location" required><br>
+
+      <label class="bodyText2">Store Type:</label><br>
+      <input type="radio" name="storeType" value="Multi-brand Retailer"> Multi-brand Retailer<br>
+      <input type="radio" name="storeType" value="Exclusive Brand Outlet"> Exclusive Brand Outlet<br>
+      <input type="radio" name="storeType" value="Boutique"> Boutique<br>
+      <input type="radio" name="storeType" value="Other"> Other<br>
+
+      <!-- Section 2: Product Categories Sold -->
+      <h2 class="headline2">2. Product Categories Sold</h2>
+      <label class="bodyText2">What types of clothing does your store sell? (Select all that apply)</label><br>
+      <input type="checkbox" name="productCategories[]" value="Men’s Clothing"> Men’s Clothing<br>
+      <input type="checkbox" name="productCategories[]" value="Women’s Clothing"> Women’s Clothing<br>
+      <input type="checkbox" name="productCategories[]" value="Kids’ Clothing"> Kids’ Clothing<br>
+      <input type="checkbox" name="productCategories[]" value="Unisex Clothing"> Unisex Clothing<br>
+      <input type="checkbox" name="productCategories[]" value="Footwear"> Footwear<br>
+      <input type="checkbox" name="productCategories[]" value="Accessories"> Accessories<br>
+
+      <label class="bodyText2">Which clothing category has the highest sales in your store?</label><br>
+      <input type="radio" name="highestSalesCategory" value="Casual Wear"> Casual Wear<br>
+      <input type="radio" name="highestSalesCategory" value="Ethnic Wear"> Ethnic Wear<br>
+      <input type="radio" name="highestSalesCategory" value="Formal Wear"> Formal Wear<br>
+      <input type="radio" name="highestSalesCategory" value="Party Wear"> Party Wear<br>
+      <input type="radio" name="highestSalesCategory" value="Activewear/Sportswear"> Activewear/Sportswear<br>
+      <input type="radio" name="highestSalesCategory" value="Winter Wear"> Winter Wear<br>
+      <input type="radio" name="highestSalesCategory" value="Footwear"> Footwear<br>
+      <input type="radio" name="highestSalesCategory" value="Accessories"> Accessories<br>
+
+      <label class="bodyText2">Which price range of clothing sells the most in your store?</label><br>
+      <input type="radio" name="priceRange" value="₹500 – ₹1,500"> ₹500 – ₹1,500<br>
+      <input type="radio" name="priceRange" value="₹1,500 – ₹3,000"> ₹1,500 – ₹3,000<br>
+      <input type="radio" name="priceRange" value="₹3,000 – ₹5,000"> ₹3,000 – ₹5,000<br>
+      <input type="radio" name="priceRange" value="Above ₹5,000"> Above ₹5,000<br>
+
+      <!-- Section 3: Sales & Customer Trends -->
+      <h2 class="headline2">3. Sales & Customer Trends</h2>
+      <label for="inStoreSales" class="bodyText2">What percentage of your sales come from in-store vs. online?</label><br>
+      <label for="inStoreSales" class="bodyText2">In-store:</label>
+      <input type="number" id="inStoreSales" name="inStoreSales" placeholder="%" required><br>
+      <label for="onlineSales" class="bodyText2">Online:</label>
+      <input type="number" id="onlineSales" name="onlineSales" placeholder="%" required><br>
+
+      <label class="bodyText2">Do you currently offer delivery services for customers?</label><br>
+      <input type="radio" name="deliveryService" value="Yes, via third-party services"> Yes, via third-party services<br>
+      <input type="radio" name="deliveryService" value="Yes, self-managed delivery"> Yes, self-managed delivery<br>
+      <input type="radio" name="deliveryService" value="No, only in-store purchases"> No, only in-store purchases<br>
+
+      <label class="bodyText2">What are your biggest challenges in selling fashion products?</label><br>
+      <input type="checkbox" name="challenges[]" value="Slow inventory turnover"> Slow inventory turnover<br>
+      <input type="checkbox" name="challenges[]" value="High return rates"> High return rates<br>
+      <input type="checkbox" name="challenges[]" value="Difficulty in managing online sales"> Difficulty in managing online sales<br>
+      <input type="checkbox" name="challenges[]" value="Customer demand for faster delivery"> Customer demand for faster delivery<br>
+
+      <label class="bodyText2">What is the average return rate for your products?</label><br>
+      <input type="radio" name="returnRate" value="Less than 10%"> Less than 10%<br>
+      <input type="radio" name="returnRate" value="10-20%"> 10-20%<br>
+      <input type="radio" name="returnRate" value="More than 20%"> More than 20%<br>
+
+      <!-- Section 4: Interest in DashDrobe Collaboration -->
+      <h2 class="headline2">4. Interest in DashDrobe Collaboration</h2>
+      <label class="bodyText2">Would you be interested in a 60-minute fashion delivery service for your store?</label><br>
+      <input type="radio" name="fastDeliveryInterest" value="Yes"> Yes<br>
+      <input type="radio" name="fastDeliveryInterest" value="No"> No<br>
+      <input type="radio" name="fastDeliveryInterest" value="Maybe, need more details"> Maybe, need more details<br>
+
+      <label class="bodyText2">Would you be open to offering a Try & Buy option where customers can return products instantly?</label><br>
+      <input type="radio" name="tryAndBuy" value="Yes"> Yes<br>
+      <input type="radio" name="tryAndBuy" value="No"> No<br>
+      <input type="radio" name="tryAndBuy" value="Maybe, depending on policies"> Maybe, depending on policies<br>
+
+      <label class="bodyText2">Do you currently face issues with unsold inventory or warehousing costs?</label><br>
+      <input type="radio" name="inventoryIssues" value="Yes"> Yes<br>
+      <input type="radio" name="inventoryIssues" value="No"> No<br>
+      <input type="radio" name="inventoryIssues" value="Sometimes"> Sometimes<br>
+
+      <label class="bodyText2">How often do customers inquire about fast delivery or same-day delivery?</label><br>
+      <input type="radio" name="fastDeliveryInquiries" value="Frequently"> Frequently<br>
+      <input type="radio" name="fastDeliveryInquiries" value="Occasionally"> Occasionally<br>
+      <input type="radio" name="fastDeliveryInquiries" value="Rarely"> Rarely<br>
+
+      <label class="bodyText2">Would AI-based features like virtual try-on avatars and outfit recommendations add value to your store?</label><br>
+      <input type="radio" name="aiFeaturesValue" value="Yes, it would enhance customer experience"> Yes, it would enhance customer experience<br>
+      <input type="radio" name="aiFeaturesValue" value="No, not a priority"> No, not a priority<br>
+      <input type="radio" name="aiFeaturesValue" value="Not sure, would like to learn more"> Not sure, would like to learn more<br>
+
+      <!-- Section 5: Business & Financial Considerations -->
+      <h2 class="headline2">5. Business & Financial Considerations</h2>
+      <label class="bodyText2">What commission percentage would you be comfortable sharing per sale?</label><br>
+      <input type="radio" name="commissionPercentage" value="5%"> 5%<br>
+      <input type="radio" name="commissionPercentage" value="7%"> 7%<br>
+      <input type="radio" name="commissionPercentage" value="10%"> 10%<br>
+      <input type="radio" name="commissionPercentage" value="Other"> Other (Please specify): <input type="text" name="otherCommissionPercentage"><br>
+
+      <label class="bodyText2">Would you prefer a subscription-based model instead of per-sale commissions?</label><br>
+      <input type="radio" name="subscriptionModel" value="Yes"> Yes<br>
+      <input type="radio" name="subscriptionModel" value="No"> No<br>
+      <input type="radio" name="subscriptionModel" value="Maybe, depends on pricing"> Maybe, depends on pricing<br>
+
+      <label class="bodyText2">Do you offer discounts or promotions that could be featured on DashDrobe?</label><br>
+      <input type="radio" name="discountsPromotions" value="Yes, frequently"> Yes, frequently<br>
+      <input type="radio" name="discountsPromotions" value="Yes, occasionally"> Yes, occasionally<br>
+      <input type="radio" name="discountsPromotions" value="No"> No<br>
+
+      <!-- Section 6: Additional Feedback -->
+      <h2 class="headline2">6. Additional Feedback</h2>
+      <label for="feedback" class="bodyText2">What would make you more likely to partner with DashDrobe?</label><br>
+      <textarea id="feedback" name="feedback"></textarea><br>
+
+      <label for="additionalSuggestions" class="bodyText2">Any other suggestions or concerns?</label><br>
+      <textarea id="additionalSuggestions" name="additionalSuggestions"></textarea><br>
+
+      <!-- Submit Button -->
+      <button type="submit" class="submit-btn">Submit</button>
+    </form>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <!-- Company Info -->
+      <div class="footer-section company-info">
+        <img src="logo.png" alt="DashDrobe Logo" class="footer-logo">
+        <p class="bodyText2">DashDrobe is an eCommerce platform that helps retail stores deliver their products to customers in under 60 minutes. By providing fast and reliable delivery, DashDrobe enhances customer satisfaction and helps businesses expand their reach.</p>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="footer-section contact-info">
+        <h3 class="headline3">Contact Info</h3>
+        <p class="bodyText2">13531 St.No 15, Vishwkarma Colony, Ludhiana, 141003</p>
+        <p class="bodyText2">+91 98725 00160, +91 62805 42853</p>
+        <p class="bodyText2"><a href="mailto:contact@dashdrobe.in">contact@dashdrobe.in</a></p>
+      </div>
+
+      <!-- Google Map -->
+      <div class="footer-section map">
+        <h3 class="headline3">Get In Touch</h3>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.631765682044!2d75.86556931546965!3d30.89052308158617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a83c7e9b4c4d5%3A0x8b7e5a8c6f6e8b5f!2sVishwkarma%20Colony%2C%20Ludhiana%2C%20Punjab%20141003!5e0!3m2!1sen!2sin!4v1678888888888"
+          width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="./app.js"></script>
+</body>
+</html>
