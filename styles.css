@@ -29,23 +29,23 @@ body {
 }
 
 .logo {
-  height: 70px;
+  height: 80px;
   width: auto;
 }
 
 /* Typography */
 .headline1 {
-  font-size: 32px;
+  font-size: 36px;
   font-weight: bold;
 }
 
 .headline2 {
-  font-size: 28px;
+  font-size: 32px;
   font-weight: bold;
 }
 
 .headline3 {
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
 }
 
@@ -54,7 +54,7 @@ body {
 }
 
 .bodyText2 {
-  font-size: 14px;
+  font-size: 17px;
 }
 
 /* Form Styles */
@@ -108,13 +108,13 @@ input[type="text"], input[type="number"], textarea {
 }
 
 .footer-logo {
-  height: 50px;
+  height: 80px;
   width: auto;
 }
 
 .map iframe {
-  width: 100%;
-  height: 300px;
+  width: auto;
+  height: 150px;
   border: none;
 }
 
