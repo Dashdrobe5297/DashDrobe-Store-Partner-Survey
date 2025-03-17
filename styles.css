@@ -137,7 +137,6 @@ input[type="text"], input[type="number"], textarea {
   }
 
   .map iframe {
-    width: 90%;
-    max-width: 300px;
+    width: 70%
   }
 }
