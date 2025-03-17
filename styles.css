@@ -68,7 +68,7 @@ label {
 }
 
 input[type="text"], input[type="number"], textarea {
-  width: 80%;
+  width: 90%;
   padding: 8px;
   margin-top: 5px;
 }
