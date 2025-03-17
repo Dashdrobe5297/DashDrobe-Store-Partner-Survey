@@ -40,9 +40,9 @@
       <!-- Section 2: Product Categories Sold -->
       <h2 class="headline2">2. Product Categories Sold</h2>
       <label class="bodyText2">What types of clothing does your store sell? (Select all that apply)</label><br>
-      <input type="checkbox" name="productCategories" value="Menâ€™s Clothing"> Menâ€™s Clothing<br>
-      <input type="checkbox" name="productCategories" value="Womenâ€™s Clothing"> Womenâ€™s Clothing<br>
-      <input type="checkbox" name="productCategories" value="Kidsâ€™ Clothing"> Kidsâ€™ Clothing<br>
+      <input type="checkbox" name="productCategories" value="Men’s Clothing"> Men’s Clothing<br>
+      <input type="checkbox" name="productCategories" value="Women’s Clothing"> Women’s Clothing<br>
+      <input type="checkbox" name="productCategories" value="Kids’ Clothing"> Kids’ Clothing<br>
       <input type="checkbox" name="productCategories" value="Unisex Clothing"> Unisex Clothing<br>
       <input type="checkbox" name="productCategories" value="Footwear"> Footwear<br>
       <input type="checkbox" name="productCategories" value="Accessories"> Accessories<br>
@@ -58,10 +58,10 @@
       <input type="radio" name="highestSalesCategory" value="Accessories"> Accessories<br>
 
       <label class="bodyText2">Which price range of clothing sells the most in your store?</label><br>
-      <input type="radio" name="priceRange" value="â‚¹500 â€“ â‚¹1,500"> â‚¹500 â€“ â‚¹1,500<br>
-      <input type="radio" name="priceRange" value="â‚¹1,500 â€“ â‚¹3,000"> â‚¹1,500 â€“ â‚¹3,000<br>
-      <input type="radio" name="priceRange" value="â‚¹3,000 â€“ â‚¹5,000"> â‚¹3,000 â€“ â‚¹5,000<br>
-      <input type="radio" name="priceRange" value="Above â‚¹5,000"> Above â‚¹5,000<br>
+      <input type="radio" name="priceRange" value="₹500 – ₹1,500"> ₹500 – ₹1,500<br>
+      <input type="radio" name="priceRange" value="₹1,500 – ₹3,000"> ₹1,500 – ₹3,000<br>
+      <input type="radio" name="priceRange" value="₹3,000 – ₹5,000"> ₹3,000 – ₹5,000<br>
+      <input type="radio" name="priceRange" value="Above ₹5,000"> Above ₹5,000<br>
 
       <!-- Section 3: Sales & Customer Trends -->
       <h2 class="headline2">3. Sales & Customer Trends</h2>
@@ -171,11 +171,6 @@
       <textarea id="additionalSuggestions" name="additionalSuggestions"></textarea><br>
 
       <!-- Submit Button -->
-      <div id="successMessage" class="success-message" style="display: none;">
-        <p>Form submitted successfully!</p>
-      </div>
-
-      
       <button type="submit" class="submit-btn">Submit</button>
     </form>
   </main>
@@ -208,24 +203,6 @@
   </footer>
 
   <!-- JavaScript -->
-  <script>
-  document.getElementById('surveyForm').addEventListener('submit', function(e) {
-    e.preventDefault();
-    
-    // Simulate form submission (replace this with actual form submission logic)
-    setTimeout(function() {
-      // Show success message
-      document.getElementById('successMessage').style.display = 'block';
-      
-      // Optionally, scroll to the success message
-      document.getElementById('successMessage').scrollIntoView({behavior: 'smooth'});
-      
-      // Optionally, hide the message after a few seconds
-      setTimeout(function() {
-        document.getElementById('successMessage').style.display = 'none';
-      }, 5000);
-    }, 1000); // Simulated delay of 1 second
-  });
-</script>
+  <script src="./script.js"></script>
 </body>
 </html>
