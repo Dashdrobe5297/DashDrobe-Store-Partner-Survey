@@ -171,6 +171,11 @@
       <textarea id="additionalSuggestions" name="additionalSuggestions"></textarea><br>
 
       <!-- Submit Button -->
+      <div id="successMessage" class="success-message" style="display: none;">
+        <p>Form submitted successfully!</p>
+      </div>
+
+      
       <button type="submit" class="submit-btn">Submit</button>
     </form>
   </main>
@@ -203,5 +208,24 @@
   </footer>
 
   <!-- JavaScript -->
+  <script>
+  document.getElementById('surveyForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Simulate form submission (replace this with actual form submission logic)
+    setTimeout(function() {
+      // Show success message
+      document.getElementById('successMessage').style.display = 'block';
+      
+      // Optionally, scroll to the success message
+      document.getElementById('successMessage').scrollIntoView({behavior: 'smooth'});
+      
+      // Optionally, hide the message after a few seconds
+      setTimeout(function() {
+        document.getElementById('successMessage').style.display = 'none';
+      }, 5000);
+    }, 1000); // Simulated delay of 1 second
+  });
+</script>
 </body>
 </html>
