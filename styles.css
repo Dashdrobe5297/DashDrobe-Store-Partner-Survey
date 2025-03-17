@@ -119,12 +119,25 @@ input[type="text"], input[type="number"], textarea {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .footer-content {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  
+
   .footer-section {
-    margin: 10px 0;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .footer-logo {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .map iframe {
+    width: 100%;
+    max-width: 400px;
   }
 }
